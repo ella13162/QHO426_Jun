@@ -1,6 +1,16 @@
-print("Hello World!")
-print("Ela is my name")
+def inc_a(a):
+    a = a + 1
+    return a
 
-print("give me a number: ")
-n = input()
-print("multiplication of your number by 5 is: ", n*5)
+def dec_a(a):
+    a = a - 1
+    return a
+
+def run():
+    a = 7
+    a = dec_a(inc_a(a+2))
+    for i in range(2):
+        a = inc_a(a)
+    print("The value of a is {}".format(a))
+
+run()
