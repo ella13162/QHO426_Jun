@@ -1,16 +1,6 @@
-def inc_a(a):
-    a = a + 1
-    return a
-
-def dec_a(a):
-    a = a - 1
-    return a
-
-def run():
-    a = 7
-    a = dec_a(inc_a(a+2))
-    for i in range(2):
-        a = inc_a(a)
-    print("The value of a is {}".format(a))
-
-run()
+print("Program started!\n")
+print ("Please enter an ASCII code: ")
+x = abs(int(input ()))
+if x in range(32,127):
+        print(f"The charracter represented by the ASCII code {x} is {chr(x)}")
+print("The program ended!")
